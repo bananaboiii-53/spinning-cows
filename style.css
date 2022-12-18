@@ -6,9 +6,18 @@ body{
 }
 
 @media only screen and (max-width: 768px) {
-  body {
-    background-color: lightblue;
-  }
+	img{
+		max-width: 90%;
+		height: auto;
+		margin:20px;
+		transition: border-radius 1s;
+		border: 1px dotted black;
+	}img:hover{
+		border-radius:50%;
+		animation: rotateIMG 3s 1s linear infinite /*imgRadiate3 3s infinite;*/
+	}img:not(:hover){
+		animation: rotateIMG 3s 1s linear infinite paused, imgRadiate3 3s infinite paused;
+	}
 }
 @media only screen and (min-width: 769px){
 	img{
