@@ -1,7 +1,7 @@
 body{
 	/* animation: backgroundColorChange 5s infinite; */
 	font-family: HelveticaNeue Light, Helvetica Regular, Helvetica, sans-serif;
-	background-color: #eeffff;
+	background-color: rgba(232, 213, 149, 0.8);
 	/*border: 1px solid black;*/ /*Not functioning correctly*/
 }
 
@@ -32,10 +32,6 @@ body{
 	}img:not(:hover){
 		animation: rotateIMG 3s 1s linear infinite paused, imgRadiate3 3s infinite paused;
 	}
-}
-
-.spinningcow{
-
 }
 
 @keyframes backgroundColorChange{
@@ -76,16 +72,6 @@ body{
 	padding: 1px;
 }
 
-{
-	position: fixed;
-	bottom: 10px;
-	margin-bottom: 18px;
-	margin-left:50px;
-	margin-right: auto;
-	padding: 3px;
-	padding-bottom:9px;
-	background-color: white;
-}
 
 ul{
 	list-style-type: none;
@@ -97,6 +83,16 @@ li{
 	display: inline;
 	margin: 4px;
 	padding: 0;
+	padding-right: 8px;
+	padding-left: 0px;
+}
+
+li.published{
+	display: inline;
+	margin: 4px;
+	padding: 0;
+	padding-right:0px;
+	padding-left: 24px;
 }
 
 li a{
@@ -108,12 +104,12 @@ li a{
 }
 
  li a:visited{
-	color: #888888;
+	color: #98a24b;
 }
 
  li a:hover{
-	color: #333388;
-	animation: activeMenuLinkGlow 2s infinite linear;
+	color: #821103;
+	/*animation: activeMeninkGlow 2s infinite linear;*/
 }
 
  li a:active{
@@ -133,6 +129,7 @@ h1{
 }
 
 .bottomTitle{
+	color: #ffe8b9;
 	position: fixed;
 	bottom: 0px;
 	left: 30px;
@@ -140,10 +137,30 @@ h1{
 	margin-bottom: 18px;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 3px;
+	padding: 7px;
 	padding-bottom:1px;
-	background-color: white;
-	border: 1px dotted black;
+	background-color: #8c942f;
+	border: 3px solid black;
+}
+
+.bottomMenu{
+	position: fixed;
+	bottom: 10px;
+	margin-bottom: 18px;
+	margin-left:50px;
+	margin-right: auto;
+	padding: 3px;
+	padding-bottom:9px;
+	background-color: rgba(221, 255, 201, 0);
+}
+
+
+div.bottomMenu ul li a:visited{
+	color: black;
+}
+
+div.bottomMenu ul li a:hover{
+	color: #821103;
 }
 
 h2{
