@@ -49,7 +49,7 @@ body{
 }
 
 .main{
-	padding-top: 12%;
+	padding-top: 11%;
 	border: 10px solid black;
 }
 
@@ -93,6 +93,7 @@ li.published{
 	padding: 0;
 	padding-right:0px;
 	padding-left: 24px;
+	/*padding-bottom:10%; /*nonresponsive */ */
 }
 
 li a{
@@ -113,6 +114,27 @@ li a{
 }
 
  li a:active{
+	color: #ffffaa;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:link{
+	color: #883333;
+}
+
+a:visited{
+	color: #98a24b;
+}
+
+a:hover{
+	color: #821103;
+	/*animation: activeMeninkGlow 2s infinite linear;*/
+}
+
+a:active{
 	color: #ffffaa;
 }
 
@@ -154,6 +176,14 @@ h1{
 	background-color: rgba(221, 255, 201, 0);
 }
 
+.topMenu h2{
+	text-decoration:none;
+	underline:none;
+	position:relative;
+	bottom:60px;
+	left:798px;
+}
+
 
 div.bottomMenu ul li a:visited{
 	color: black;
@@ -164,7 +194,6 @@ div.bottomMenu ul li a:hover{
 }
 
 h2{
-	text-decoration: underline;
 	text-transform: capitalize;
 	margin-bottom: 3px;
 	padding-bottom: 0px;
