@@ -91,13 +91,23 @@ ul.published{
 	padding-bottom:25px;
 }
 
+div.published{
+	width:500px;
+	margin:auto;
+	flex:auto;
+}
+
 li.published{
 	display: inline;
 	margin: 4px;
 	padding: 0;
-	padding-right:0px;
-	padding-left: 24px;
-	/*padding-bottom:10%; /*nonresponsive */ */
+	padding-right:24px;
+}
+
+li.editor{
+	display: inline;
+	margin: 4px;
+	padding: 0;
 }
 
 li a{
@@ -189,13 +199,14 @@ h1{
 }
 
 div.poems{
-	margin-top: 4%;
-	margin-left: 12%;
+	margin:auto;
+	margin-top:3%;
 	padding-left: 20px;
 	padding-right:20px;
 	padding-top:20px;
-	width: 320px;
+	width: 100%;
 	border: 10px solid black;
+	box-sizing:border-box;
 }
 
 video{
@@ -217,7 +228,8 @@ h2{
 }
 
 h1.poetry-header{
-	padding-bottom:40px;
+	position:absolute;
+	left:10%;
 }
 
 p{
