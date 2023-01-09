@@ -34,12 +34,6 @@ body{
 	}
 }
 
-@keyframes backgroundColorChange{
-	0%{background-color: #D5D2FD;}
-	50%{background-color: #FAFDD2;}
-	100%{background-color: #D5D2FD;}
-}
-
 .border{
 	border: 1px solid black;
 }
@@ -91,9 +85,11 @@ ul.published{
 }
 
 div.published{
-	width:500px;
-	margin:auto;
+	max-width:500px;
 	flex:auto;
+	flex-wrap: wrap;
+	position:relative;
+	left:60px;
 }
 
 li.published{
@@ -189,10 +185,20 @@ h1{
 	background-color: rgba(221, 255, 201, 0);
 }
 
+
 /* Use a media query to add a breakpoint at 800px: */
+
 @media screen and (max-width: 800px) {
   .bottomMenu{
-		font-size:14px;
+		font-size:17px;
+	}
+	li, #poemsdropdown, p{
+		font-size: large;
+	}
+	div.published{
+		flex:auto;
+		word-break: keep-all;
+		flex-wrap: wrap;
 	}
 }
 
@@ -205,17 +211,17 @@ h1{
 }
 
 div.poems{
-
+	min-width:400px;
 }
 
 .blackborder{
 	margin:auto;
 	margin-bottom:3%;
-	padding-left: 20px;
-	padding-right:20px;
+	padding-left: 50px;
+	padding-right: 50px;
 	padding-top:20px;
 	padding-bottom:20px;
-	width: 100%;
+	width: 90%;
 	border: 10px solid black;
 	box-sizing:border-box;
 }
@@ -281,4 +287,13 @@ img::selection{
 @keyframes rotateIMG{
 	0%{transform: rotate(0deg);}
 	100%{transform: rotate(360deg);}
+}
+
+.underconstruction{
+	text-align:center;
+	margin-top:150px;
+}
+
+.empty-tall{
+	margin-bottom:400px;
 }
