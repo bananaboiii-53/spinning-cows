@@ -118,12 +118,12 @@ li a{
 }
 
  li a:hover{
-	color: #821103;
+	color: #402414;
 	/*animation: activeMeninkGlow 2s infinite linear;*/
 }
 
  li a:active{
-	color: #ffffaa;
+	color: #f6d7a3;
 }
 
 a{
@@ -131,20 +131,27 @@ a{
 }
 
 a:link{
-	color: #130807;
+	color: #98a24b;
 }
 
 a:visited{
-	color: #fdeebb;
+	color: #821103;
 }
 
 a:hover{
-	color: #821103;
-	/*animation: activeMeninkGlow 2s infinite linear;*/
+	color: #402414;
 }
 
 a:active{
-	color: #ffffaa;
+	color: #8c942f;
+}
+
+div.bottomTitle a:active{
+	color:#f6d7a3;
+}
+
+div.published li.published a:active, div.published li.editor a:active{
+	color:#8c942f;
 }
 
 @keyframes activeMenuLinkGlow{
@@ -235,7 +242,11 @@ div.bottomMenu ul li a:visited{
 }
 
 div.bottomMenu ul li a:hover{
-	color: #821103;
+	color: #402414;
+}
+
+div.bottomMenu ul li a:active{
+	color: #f6d7a3;
 }
 
 h2{
@@ -275,7 +286,7 @@ p{
 }
 
 ::selection{
-	background-color:#ffffaa;
+	background-color:#f6d7a3;
 	color:#716e8f;
 }
 
