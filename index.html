@@ -1,29 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="style.css">
-<title>spinningcow.xyz</title>
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>spinningcow.xyz</title>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
 </head>
 <body>
-<div class="center main blackborder" id="spinningcow"><img src="hiCows-scaled2.png"></div>
-<div class="center bottomTitle"><a class="title" href="index.html"><h1>SpinningCow.xyz</h1></a></div>
-<div class="bottomMenu">
-  <ul>
-    <li><a href="poetry.html">Poetry</a></li>
-    <li><a href="photography.html">Photography</a></li>
-    <li><a href="https://github.com/mkstarr">Code</a></li>
-  </ul>
-</div>
-
-<script>
-  document.getElementById("spinningcow").addEventListener("click", myFunction);
+  <div class="center main blackborder" id="spinningcow"><img src="hiCows-scaled2.png"></div>
   
-  function myFunction() {
-    document.getElementById("spinningcow").innerHTML = "YOU CLICKED ME!";
-  }
+  <div class="center bottomTitle"><a class="title" href="index.html"><h1>SpinningCow.xyz</h1></a></div>
+  <div class="bottomMenu">
+    <ul>
+      <li><a href="poetry.html">Poetry</a></li>
+      <li><a href="photography.html">Photography</a></li>
+      <li><a href="https://github.com/mkstarr">Code</a></li>
+    </ul>
+  </div>
+
+  <script>
+    console.log("cow");
+    const cowSpinning = [
+      { transform: 'rotate(0)' },
+      { transform: 'rotate(360deg)' }
+    ];
+
+    const cowTiming = {
+      duration: 3000
+    }
+
+    const cow = document.querySelector("#spinningcow");
+    
+    //const mediaQuery = window.matchMedia('(min-width: 768px)')
+    /** Check if the media query is true
+    if (mediaQuery.matches) {
+       Rotate cow image on landing page
+      cow.addEventListener('click', () => {
+        cow.animate(cowSpinning, cowTiming);
+      });
+    }**/
+
+    cow.addEventListener('click', () => {
+        cow.animate(cowSpinning, cowTiming);
+      });
   </script>
 </body>
 </html>
